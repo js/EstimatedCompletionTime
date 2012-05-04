@@ -1,0 +1,3 @@
+[submodule "JKSToolkit"]
+	path = JKSToolkit
+	url = https://js@github.com/js/JKSToolkit.git
