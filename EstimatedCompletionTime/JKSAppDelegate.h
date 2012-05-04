@@ -9,7 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 @interface JKSAppDelegate : NSObject <NSApplicationDelegate>
-
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSProgressIndicator *progressBar;
+@property (weak) IBOutlet NSTextField *progressLabel;
+
+- (IBAction)startPressed:(id)sender;
 
 @end

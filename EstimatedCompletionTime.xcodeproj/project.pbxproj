@@ -17,6 +17,7 @@
 		04200BB01553CBD4002CF16D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04200B901553CBD4002CF16D /* Cocoa.framework */; };
 		04200BB81553CBD4002CF16D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04200BB61553CBD4002CF16D /* InfoPlist.strings */; };
 		04200BBB1553CBD4002CF16D /* EstimatedCompletionTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04200BBA1553CBD4002CF16D /* EstimatedCompletionTimeTests.m */; };
+		04200BC71553CD63002CF16D /* JKSEstimatedCompletionTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 04200BC61553CD63002CF16D /* JKSEstimatedCompletionTime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		04200BB71553CBD4002CF16D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04200BB91553CBD4002CF16D /* EstimatedCompletionTimeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EstimatedCompletionTimeTests.h; sourceTree = "<group>"; };
 		04200BBA1553CBD4002CF16D /* EstimatedCompletionTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EstimatedCompletionTimeTests.m; sourceTree = "<group>"; };
+		04200BC51553CD63002CF16D /* JKSEstimatedCompletionTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSEstimatedCompletionTime.h; sourceTree = "<group>"; };
+		04200BC61553CD63002CF16D /* JKSEstimatedCompletionTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSEstimatedCompletionTime.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +78,8 @@
 		04200B811553CBD4002CF16D = {
 			isa = PBXGroup;
 			children = (
-				04200B961553CBD4002CF16D /* EstimatedCompletionTime */,
+				04200BC41553CC7F002CF16D /* Classes */,
+				04200B961553CBD4002CF16D /* Demo App */,
 				04200BB31553CBD4002CF16D /* EstimatedCompletionTimeTests */,
 				04200B8F1553CBD4002CF16D /* Frameworks */,
 				04200B8D1553CBD4002CF16D /* Products */,
@@ -111,7 +115,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		04200B961553CBD4002CF16D /* EstimatedCompletionTime */ = {
+		04200B961553CBD4002CF16D /* Demo App */ = {
 			isa = PBXGroup;
 			children = (
 				04200BA21553CBD4002CF16D /* JKSAppDelegate.h */,
@@ -119,6 +123,7 @@
 				04200BA51553CBD4002CF16D /* MainMenu.xib */,
 				04200B971553CBD4002CF16D /* Supporting Files */,
 			);
+			name = "Demo App";
 			path = EstimatedCompletionTime;
 			sourceTree = "<group>";
 		};
@@ -151,6 +156,15 @@
 				04200BB61553CBD4002CF16D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04200BC41553CC7F002CF16D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04200BC51553CD63002CF16D /* JKSEstimatedCompletionTime.h */,
+				04200BC61553CD63002CF16D /* JKSEstimatedCompletionTime.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +278,7 @@
 			files = (
 				04200B9D1553CBD4002CF16D /* main.m in Sources */,
 				04200BA41553CBD4002CF16D /* JKSAppDelegate.m in Sources */,
+				04200BC71553CD63002CF16D /* JKSEstimatedCompletionTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +390,7 @@
 				GCC_PREFIX_HEADER = "EstimatedCompletionTime/EstimatedCompletionTime-Prefix.pch";
 				INFOPLIST_FILE = "EstimatedCompletionTime/EstimatedCompletionTime-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -386,6 +402,7 @@
 				GCC_PREFIX_HEADER = "EstimatedCompletionTime/EstimatedCompletionTime-Prefix.pch";
 				INFOPLIST_FILE = "EstimatedCompletionTime/EstimatedCompletionTime-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
