@@ -18,6 +18,8 @@
 		04200BB81553CBD4002CF16D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04200BB61553CBD4002CF16D /* InfoPlist.strings */; };
 		04200BBB1553CBD4002CF16D /* EstimatedCompletionTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04200BBA1553CBD4002CF16D /* EstimatedCompletionTimeTests.m */; };
 		04200BC71553CD63002CF16D /* JKSEstimatedCompletionTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 04200BC61553CD63002CF16D /* JKSEstimatedCompletionTime.m */; };
+		04200BD11554055E002CF16D /* JKSEstimatedCompletionCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04200BD01554055E002CF16D /* JKSEstimatedCompletionCalculator.m */; };
+		04200BF91554866E002CF16D /* JKSQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04200BF81554866E002CF16D /* JKSQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,10 @@
 		04200BBA1553CBD4002CF16D /* EstimatedCompletionTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EstimatedCompletionTimeTests.m; sourceTree = "<group>"; };
 		04200BC51553CD63002CF16D /* JKSEstimatedCompletionTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSEstimatedCompletionTime.h; sourceTree = "<group>"; };
 		04200BC61553CD63002CF16D /* JKSEstimatedCompletionTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSEstimatedCompletionTime.m; sourceTree = "<group>"; };
+		04200BCF1554055E002CF16D /* JKSEstimatedCompletionCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSEstimatedCompletionCalculator.h; sourceTree = "<group>"; };
+		04200BD01554055E002CF16D /* JKSEstimatedCompletionCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSEstimatedCompletionCalculator.m; sourceTree = "<group>"; };
+		04200BF71554866E002CF16D /* JKSQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JKSQueue.h; path = JKSToolkit/JKSToolkit/Classes/JKSQueue.h; sourceTree = "<group>"; };
+		04200BF81554866E002CF16D /* JKSQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JKSQueue.m; path = JKSToolkit/JKSToolkit/Classes/JKSQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		04200B811553CBD4002CF16D = {
 			isa = PBXGroup;
 			children = (
+				04200BF615548653002CF16D /* JKSToolkit */,
 				04200BC41553CC7F002CF16D /* Classes */,
 				04200B961553CBD4002CF16D /* Demo App */,
 				04200BB31553CBD4002CF16D /* EstimatedCompletionTimeTests */,
@@ -163,8 +170,19 @@
 			children = (
 				04200BC51553CD63002CF16D /* JKSEstimatedCompletionTime.h */,
 				04200BC61553CD63002CF16D /* JKSEstimatedCompletionTime.m */,
+				04200BCF1554055E002CF16D /* JKSEstimatedCompletionCalculator.h */,
+				04200BD01554055E002CF16D /* JKSEstimatedCompletionCalculator.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		04200BF615548653002CF16D /* JKSToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				04200BF71554866E002CF16D /* JKSQueue.h */,
+				04200BF81554866E002CF16D /* JKSQueue.m */,
+			);
+			name = JKSToolkit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +297,8 @@
 				04200B9D1553CBD4002CF16D /* main.m in Sources */,
 				04200BA41553CBD4002CF16D /* JKSAppDelegate.m in Sources */,
 				04200BC71553CD63002CF16D /* JKSEstimatedCompletionTime.m in Sources */,
+				04200BD11554055E002CF16D /* JKSEstimatedCompletionCalculator.m in Sources */,
+				04200BF91554866E002CF16D /* JKSQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

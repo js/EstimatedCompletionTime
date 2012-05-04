@@ -14,5 +14,6 @@
 @property (weak) IBOutlet NSTextField *progressLabel;
 
 - (IBAction)startPressed:(id)sender;
+- (IBAction)startPressed2:(id)sender;
 
 @end
